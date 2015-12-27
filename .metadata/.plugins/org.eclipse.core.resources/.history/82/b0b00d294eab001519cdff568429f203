@@ -1,0 +1,18 @@
+package com.psamp.main;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+class JDBCTEst {
+	public static void main(String[] args) {
+		
+		try(Connection db = DriverManager.getConnection("jdbc:mysql://localhost/transcripts?" + "user=root&password=rooty")) {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
+
+}

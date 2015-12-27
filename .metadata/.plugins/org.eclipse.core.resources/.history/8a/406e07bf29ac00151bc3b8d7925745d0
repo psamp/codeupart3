@@ -1,0 +1,41 @@
+package com.psamp.transcipts;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+class JDBCLayer {
+	private String dbURL = "jdbc:mysql://localhost/transcripts?user=root&password=rooty&useSSL=true";
+
+	List getAllTranscripts() {
+
+		List<Transcript> rtn = new ArrayList<Transcript>();
+
+		try (Connection db = DriverManager.getConnection(dbURL); Statement st = db.createStatement()) {
+
+			ResultSet result = st.executeQuery("select * from agile");
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private List buildArrayListFromResultSet(ResultSet set) {
+		List<Transcript> rtn = new ArrayList<Transcript>();
+		
+		while (set.next()) {
+			rtn.add(new Transcript(set.getLong("id"), set.getString("firstName"), set.getString("lastName"), set.getString("email"), set.getInt("grade"), set.getInt("grade") > 68) );
+			
+		}
+	}
+
+	private Transcript buildTranscript(String firstName, String lastName, String email, int grade, boolean passed) {
+		return new Transcript(firstName, lastName, email, grade, passed);
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.psamp.transcipts;
+
+class Transcript {
+	private String firstName;
+	private String lastName;
+	private String email;
+	private int grade;
+	private boolean passed;
+
+}
