@@ -4,6 +4,17 @@
 		<item value="222" key="DIALOG_Y_ORIGIN"/>
 		<item value="216" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/Users/psampson/Dropbox (CodeU)/CodeU Team Folder/LabSetup/threading.zip"/>
+		</list>
+	</section>
 	<section name="NewWizardAction">
 	</section>
 </section>
