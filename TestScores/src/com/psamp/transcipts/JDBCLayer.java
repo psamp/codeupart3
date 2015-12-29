@@ -8,16 +8,25 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-class JDBCLayer {
+public class JDBCLayer {
 	private String dbURL = "jdbc:mysql://localhost/transcripts?user=root&password=rooty&useSSL=true";
+	private String tableName;
 
-	List<Transcript> getAllTranscripts() {
+	public JDBCLayer(String name) {
+		this.tableName = name;
+	}
 
-		List<Transcript> rtn = new ArrayList<Transcript>();
+	public int postNewTranscript(String firstName, String lastName, String email, String date, int grade) {
 
-		try (Connection db = DriverManager.getConnection(dbURL); Statement st = db.createStatement()) {
+		int rtn = -1;
 
-			rtn = this.buildArrayListFromResultSet(st.executeQuery("select * from agile"));
+		try (Connection connection = DriverManager.getConnection(this.getDbURL());
+				Statement statement = connection.createStatement()) {
+
+			String sql = "insert into " + this.getTableName() + "(firstName, lastName, email, taken, grade) values ( '"
+					+ firstName + "', '" + lastName + "', '" + email + "', '" + date + "', " + grade + ")";
+
+			rtn = statement.executeUpdate(sql);
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -26,13 +35,47 @@ class JDBCLayer {
 		return rtn;
 	}
 
-	private List<Transcript> buildArrayListFromResultSet(ResultSet set) {
+	public List<Transcript> getAllFromCurrentTable() {
+
+		List<Transcript> rtn = null;
+
+		try (Connection connection = DriverManager.getConnection(this.getDbURL());
+				Statement statement = connection.createStatement()) {
+
+			rtn = this.buildArrayListOfTranscriptsFromResultSet(
+					statement.executeQuery("select * from " + this.getTableName()));
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return rtn;
+	}
+
+	List<Transcript> searchTableByID(int id) {
+		List<Transcript> rtn = null;
+
+		try (Connection connection = DriverManager.getConnection(this.getDbURL());
+				Statement statement = connection.createStatement()) {
+
+			rtn = this.buildArrayListOfTranscriptsFromResultSet(
+					statement.executeQuery("select * from " + this.getTableName() + " where id = " + id));
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return rtn;
+	}
+
+	private List<Transcript> buildArrayListOfTranscriptsFromResultSet(ResultSet set) {
 		List<Transcript> rtn = new ArrayList<Transcript>();
 
 		try {
 			while (set.next()) {
-				rtn.add(this.buildTranscript(set.getLong("id"), set.getString("firstName"), set.getString("lastName"),
-						set.getString("email"), set.getInt("grade")));
+				rtn.add(this.buildNewTranscriptInstance(set.getLong("id"), set.getString("firstName"),
+						set.getString("lastName"), set.getString("email"), set.getString("taken"),
+						set.getInt("grade")));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -41,11 +84,20 @@ class JDBCLayer {
 		return rtn;
 	}
 
-	private Transcript buildTranscript(long id, String firstName, String lastName, String email, int grade) {
+	private Transcript buildNewTranscriptInstance(long id, String firstName, String lastName, String email,
+			String dateTaken, int grade) {
 
-		Transcript rtn = new Transcript(id, firstName, lastName, email, grade, grade > 68);
+		Transcript rtn = new Transcript(id, firstName, lastName, email, dateTaken, grade);
 
 		return rtn;
+	}
+
+	String getTableName() {
+		return tableName;
+	}
+
+	String getDbURL() {
+		return dbURL;
 	}
 
 }

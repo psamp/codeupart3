@@ -1,50 +1,60 @@
 package com.psamp.transcipts;
 
-class Transcript {
+public class Transcript {
 	private long id;
 	private String firstName;
 	private String lastName;
 	private String email;
+	private String dateTaken;
 	private int grade;
 	private boolean passed;
-	
-	public Transcript(long id, String firstName, String lastName, String email, int grade, boolean passed) {
+
+	public Transcript(long id, String firstName, String lastName, String email, String dateTaken, int grade) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.dateTaken = dateTaken;
 		this.grade = grade;
-		this.passed = passed;
+		this.passed = grade > 68;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Transcript [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", grade=" + grade + ", passed=" + passed + "]";
 	}
 
-	String getFirstName() {
+	public String getFirstName() {
 		return firstName;
 	}
 
-	String getLastName() {
+	public String getLastName() {
 		return lastName;
 	}
 
-	String getEmail() {
+	public String getEmail() {
 		return email;
 	}
 
-	int getGrade() {
+	public int getGrade() {
 		return grade;
 	}
 
-	boolean passedTest() {
+	public boolean passedTest() {
 		return passed;
 	}
 
 	long getId() {
 		return id;
+	}
+
+	public String getDateTaken() {
+		return dateTaken;
+	}
+
+	public boolean isPassed() {
+		return passed;
 	}
 
 }
