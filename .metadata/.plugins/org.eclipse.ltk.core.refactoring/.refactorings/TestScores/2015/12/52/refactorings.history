@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.psamp.main&apos; to &apos;com.psamp.jdbctest&apos;&#x0A;- Original project: &apos;TestScores&apos;&#x0A;- Original element: &apos;TestScores/src/com.psamp.main&apos;&#x0A;- Renamed element: &apos;TestScores/src/com.psamp.jdbctest&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.psamp.main&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.psamp.main" name="com.psamp.jdbctest" qualified="false" references="true" stamp="1451170945265" textual="false" version="1.0"/>
-</session>

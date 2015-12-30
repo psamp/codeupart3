@@ -1,8 +1,0 @@
-package com.psamp.main;
-
-class JDBCTEst {
-	public static void main(String[] args) {
-		
-	}
-
-}
