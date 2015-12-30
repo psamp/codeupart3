@@ -909,3 +909,55 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2015-12-29 14:37:55.170 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/psampson/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/Users/psampson/code/codeupart3/ -product org.eclipse.epp.package.java.product -keyring /Users/psampson/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-12-29 14:37:58.071
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2015-12-29 14:38:18.066
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-12-29 14:39:58.903 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/psampson/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data file:/Users/psampson/code/codeupart3/ -product org.eclipse.epp.package.java.product -keyring /Users/psampson/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-12-29 14:40:00.802
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2015-12-29 14:40:10.093
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2015-12-29 14:42:56.460
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.460
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 13, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.460
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 2349, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.461
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 2473, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.461
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 3213, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.461
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 4565, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.461
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 4877, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.461
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 6515, column 62: Missing required attribute in "property": value
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2015-12-29 14:42:56.461
+!MESSAGE Error in file:/Applications/Eclipse.app/Contents/Eclipse/p2/org.eclipse.equinox.p2.repository/cache/content-453354227.jar at line 7290, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2015-12-29 15:10:47.580
+!MESSAGE The following solutions are not available: Transpiler Plugin (id=si.gos.transpiler.feature.feature.group, site=http://p2.pdt-extensions.org/)
