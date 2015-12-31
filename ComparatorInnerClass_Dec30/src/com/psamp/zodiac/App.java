@@ -10,6 +10,7 @@ class App {
 		
 		people.add(new Person("Princess", "Capricorn"));
 		people.add(new Person("Ares", "Aries"));
+		people.add(new Person("Jane", "Aquarius"));
 		people.add(new Person("Rodney", "Capricorn"));
 		people.add(new Person("J", "Cancer"));
 		people.add(new Person("Victoria", "Gemini"));
@@ -20,6 +21,7 @@ class App {
 		people.add(new Person("Shanterria", "Cancer"));
 		people.add(new Person("Zoe", "Sagittarius"));
 		people.add(new Person("Sami", "Aries"));
+		people.add(new Person("Rey", "Aquarius"));
 		
 		Collections.sort(people);
 		

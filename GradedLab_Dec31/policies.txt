@@ -1,0 +1,12 @@
+1|75024|COMP|100.00|1000000|50000|50000
+2|75024|THIRD|50.00|1000000|<java version="1.6.0_45" class="java.beans.XMLDecoder"><object class="com.ntier.VehicleUse"><void property="vehicleUse"><object class="java.util.ArrayList"><void method="add"><string>Commercial</string></void><void method="add"><string>Work</string></void><void method="add"><string>Recreational</string></void></object></void></object></java>
+3|75024|COMP|200.00|1800000|150000|100000
+4|75024|THIRD|90.00|1500000|<java version="1.6.0_45" class="java.beans.XMLDecoder"><object class="com.ntier.VehicleUse"><void property="vehicleUse"><object class="java.util.ArrayList"><void method="add"><string>Commercial</string></void><void method="add"><string>Work</string></void><void method="add"><string>Recreational</string></void></object></void></object></java>
+5|75018|COMP|100.00|1000000|50000|50000
+6|75018|THIRD|50.00|1000000|<java version="1.6.0_45" class="java.beans.XMLDecoder"><object class="com.ntier.VehicleUse"><void property="vehicleUse"><object class="java.util.ArrayList"><void method="add"><string>Commercial</string></void><void method="add"><string>Work</string></void><void method="add"><string>Recreational</string></void></object></void></object></java>
+7|75018|COMP|100.00|1500000|80000|55000
+8|75018|THIRD|70.00|1200000|<java version="1.6.0_45" class="java.beans.XMLDecoder"><object class="com.ntier.VehicleUse"><void property="vehicleUse"><object class="java.util.ArrayList"><void method="add"><string>International</string></void><void method="add"><string>Work</string></void><void method="add"><string>Recreational</string></void></object></void></object></java>
+9|75015|COMP|100.00|1000000|50000|50000
+10|75015|THIRD|50.00|1000000|<java version="1.6.0_45" class="java.beans.XMLDecoder"><object class="com.ntier.VehicleUse"><void property="vehicleUse"><object class="java.util.ArrayList"><void method="add"><string>Commercial</string></void><void method="add"><string>Work</string></void><void method="add"><string>Recreational</string></void></object></void></object></java>
+11|75099|COMP|100.00|1000000|50000|50000
+12|75099|THIRD|50.00|1000000|<java version="1.6.0_45" class="java.beans.XMLDecoder"><object class="com.ntier.VehicleUse"><void property="vehicleUse"><object class="java.util.ArrayList"><void method="add"><string>Commercial</string></void><void method="add"><string>Work</string></void><void method="add"><string>Recreational</string></void></object></void></object></java>
